@@ -1,0 +1,13 @@
+{% extends 'some_name_pages/base_page.html' %}
+
+
+{% block footer %}
+    {% for m in menu %}
+        {% if m.url_name == 'second' %}
+            <h1>Всё работает!</h1>
+        {% endif %}
+    {% endfor %}
+
+
+    <h1>Я вторая страница</h1>
+{% endblock footer %}
